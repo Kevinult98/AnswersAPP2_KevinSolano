@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnswersAPP2_KevinSolano.Views.UserRegisterPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20,10,20,10" BackgroundColor="White">
+
+            <Entry x:Name="TxtEmail" TextTransform="Lowercase"  Placeholder="Email/UserName" FontSize="Large" TextColor="Black" Keyboard="Email"/>
+            <Entry x:Name="TxtName" TextTransform="Lowercase"  Placeholder="Name" FontSize="Large" TextColor="Black"/>
+            <Entry x:Name="TxtLastName" Placeholder="Last Name" FontSize="Large" TextColor="Black" />
+            <Entry x:Name="TxtPhone" Placeholder="Phone Number" FontSize="Large" TextColor="Black" Keyboard="Telephone"/>
+
+
+
+            <StackLayout Orientation="Horizontal" Spacing="10" Padding="0,0,20,0">
+                <Entry x:Name="TxtPass" WidthRequest="310" TextTransform="Lowercase"  Placeholder="Password" IsPassword="True" FontSize="Large" TextColor="Black"/>
+                <Switch IsToggled="False"/>
+            </StackLayout>
+
+            <Entry x:Name="TxtBackUpEmail" Placeholder="Backup Email" FontSize="Large" TextColor="Black" TextTransform="Lowercase"/>
+            <Entry x:Name="TxtJop" Placeholder="Jop Description" FontSize="Large" TextColor="Black" />
+            <Picker x:Name="CboUserRole" Title="Select a User Role" TitleColor="Aqua">
+                
+                
+            </Picker>
+            <FlexLayout AlignContent="Center">
+                <StackLayout  Padding="0,200,0,0" Orientation="Horizontal" HorizontalOptions="End" Spacing="20">
+                    <Button x:Name="BtnAdd" Text="Add" WidthRequest="170" Padding="10,0,10,0" Clicked="BtnAdd_Clicked"/>
+                    <Button x:Name="BtnCancel" Text="Cancel" WidthRequest="170" Padding="10,0,10,0"/>
+                </StackLayout>
+            </FlexLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

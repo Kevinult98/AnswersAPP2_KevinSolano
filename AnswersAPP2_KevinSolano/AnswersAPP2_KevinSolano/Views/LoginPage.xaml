@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AnswersAPP2_KevinSolano.Views.LoginPage"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <StackLayout Padding="50,0,50,0" VerticalOptions="Center">
+            <Entry x:Name="TxtUserName" TextTransform="Lowercase" Placeholder="Email" FontSize="Large" TextColor="Black" Keyboard="Email"/>
+
+            <StackLayout Orientation="Horizontal" Spacing="5" Padding="0,0,20,0" HorizontalOptions="FillAndExpand">
+
+                <Entry x:Name="TxtPassword" IsPassword="True" Placeholder="Password" FontSize="Large" TextColor="Black" />
+
+                <StackLayout>
+                    <Switch x:Name="SwSeePassword" IsToggled="False" Toggled="CmdSeePassword"/>
+                    <Label Text="show Pass" FontSize="Micro" />
+                </StackLayout>
+                
+                
+
+            </StackLayout>
+            
+            
+
+            <Button x:Name="BtnLogin" VerticalOptions="Center" Text="Login"  FontSize="Large" CornerRadius="15" TextColor="Black" BackgroundColor="DarkGreen" BorderColor="White" BorderWidth="1" Clicked="BtnLogin_Clicked"/>
+
+            <Button x:Name="BtnRegister" VerticalOptions="Center" Text="Register" FontSize="Medium" CornerRadius="15" BackgroundColor="#AF9623" BorderColor="Black" BorderWidth="1" Clicked="CmdUserRegister" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
